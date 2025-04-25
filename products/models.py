@@ -19,6 +19,11 @@ class Product(models.Model):
         return reverse('product_detail', kwargs={'pk': self.pk})
 
 
+class ActiveCommentManager(models.Manager):
+    def get_queryset(self):
+        return super(ActiveCommentManager, self).get_queryset().filter(active=True)
+
+
 class Comment(models.Model):
     PRODUCT_STARS = [
         ('1', 'very bad'),
@@ -34,6 +39,10 @@ class Comment(models.Model):
     datetime_created = models.DateTimeField(auto_now_add=True)
     datetime_modified = models.DateTimeField(auto_now=True)
     active = models.BooleanField(default=True)
+
+    # Manager
+    objects = models.Manager()  # Default manager
+    active_comments = ActiveCommentManager()  # Custom manager
 
     def get_absolute_url(self):
         return reverse('product_detail', kwargs={'pk': self.product.id})
