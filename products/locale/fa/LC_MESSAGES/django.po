@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-26 00:06+0330\n"
+"POT-Creation-Date: 2025-05-04 09:42+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-#: .\products\templates\products\product_detail.html:51
+
+#: .\models.py:38
+msgid "Comment Text"
+msgstr "متن دیدگاه"
+
+#: .\models.py:39
+msgid "What is your score?"
+msgstr "چه امتیازی به این محصول می دهید؟"
+
+#: .\templates\products\product_detail.html:51
 msgid "add to cart"
 msgstr "اضافه کردن به سبد خرید"
 
-#: .\products\templates\products\product_detail.html:71
+#: .\templates\products\product_detail.html:71
 msgid "product description"
 msgstr "توضیحات محصول"
 
-#: .\products\templates\products\product_detail.html:163
+#: .\templates\products\product_detail.html:163
 msgid "write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\products\templates\products\product_detail.html:169
+#: .\templates\products\product_detail.html:169
 msgid "send"
 msgstr "ارسال"
