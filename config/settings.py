@@ -186,3 +186,9 @@ ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
+
+# For messages framework
+from django.contrib.messages import constants
+MESSAGE_TAGS = {
+    constants.ERROR: 'danger',
+}
