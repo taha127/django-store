@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'allauth',
     'allauth.account',
+    'rosetta',
     # My apps
     'accounts',
     'pages',
@@ -136,6 +137,10 @@ AUTH_PASSWORD_VALIDATORS = [
 # LANGUAGE_CODE = "en-us"
 LANGUAGE_CODE = 'fa'
 # TIME_ZONE = "UTC"
+LANGUAGES = (
+    ('en', 'English'),
+    ('fa', 'Persian'),
+)
 TIME_ZONE = "Asia/Tehran"
 
 USE_I18N = True
