@@ -22,6 +22,15 @@ class Cart:
             self.cart[product_id]['quantity'] += quantity
         self.save()
 
+    def remove(self, product):
+        """
+        Remove the specified product from the cart.
+        """
+        product_id = str(product.id)
+        if product_id in self.cart:
+            del self.cart[product_id]
+            self.save()
+
     def save(self):
         """
         Marks the session as modified to ensure it is saved.
