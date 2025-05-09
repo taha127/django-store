@@ -7,7 +7,7 @@ class Cart:
         Initializes the cart with the request object and session.
         """
         self.request = request
-        self.session = request.Session
+        self.session = request.session
         cart = self.session.get('cart')
         if not cart:
             cart = self.session['cart'] = {}
