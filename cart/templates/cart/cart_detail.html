@@ -58,7 +58,7 @@
                                                 </td>
                                                 <td class="product-total-price">
                                                             <span class="product-price-wrapper">
-                                                                <span class="money">{{ item.product_obj.price }}</span>
+                                                                <span class="money">{{ item.total_price }}</span>
                                                             </span>
                                                 </td>
                                             </tr>
@@ -85,20 +85,20 @@
                                             <span>مجموع</span>
                                         </div>
                                         <div class="cart-calculator__item--value">
-                                            <span>۳۴۶,۰۰۰ تومان</span>
+                                            <span>{{ cart.get_total_price }} تومان</span>
                                         </div>
                                     </div>
-                                    <div class="cart-calculator__item order-total">
-                                        <div class="cart-calculator__item--head">
-                                            <span>جمع کل</span>
-                                        </div>
-                                        <div class="cart-calculator__item--value">
-                                                <span class="product-price-wrapper">
-                                                    <span class="money">۳۴۶,۰۰۰ تومان</span>
-                                                </span>
-                                        </div>
-                                    </div>
-                                </div>
+{#                                    <div class="cart-calculator__item order-total">#}
+{#                                        <div class="cart-calculator__item--head">#}
+{#                                            <span>جمع کل</span>#}
+{#                                        </div>#}
+{#                                        <div class="cart-calculator__item--value">#}
+{#                                                <span class="product-price-wrapper">#}
+{#                                                    <span class="money">۳۴۶,۰۰۰ تومان</span>#}
+{#                                                </span>#}
+{#                                        </div>#}
+{#                                    </div>#}
+{#                                </div>#}
                             </div>
                             <a href="checkout.html" class="btn btn-fullwidth btn-bg-red btn-color-white btn-hover-2">
                                 ثبت سفارش
