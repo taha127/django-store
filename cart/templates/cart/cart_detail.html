@@ -4,6 +4,9 @@
 {% load comment_tags %}
 {% load i18n %}
 {% block body %}
+    {% trans 'Cart' as tr_cart %}
+    {% include 'topheader.html' with header_name=tr_cart %}
+
     <!-- Main Content Wrapper Start -->
     <div class="main-content-wrapper">
         <div class="page-content-inner ptb--80">
