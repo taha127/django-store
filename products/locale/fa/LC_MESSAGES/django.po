@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 13:06+0330\n"
-"PO-Revision-Date: 2025-05-16 13:08+0330\n"
+"POT-Creation-Date: 2025-05-16 17:24+0330\n"
+"PO-Revision-Date: 2025-05-16 17:09+0330\n"
 "Last-Translator:   <tahadehghani127@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -27,52 +27,49 @@ msgstr "متن دیدگاه"
 msgid "What is your score?"
 msgstr "چه امتیازی به این محصول می دهید؟"
 
-#: .\templates\products\product_detail.html:54
+#: .\templates\products\product_detail.html:9
+msgid "Product details of"
+msgstr "توضیحات محصول"
+
+#: .\templates\products\product_detail.html:45
 msgid "add to cart"
 msgstr "اضافه کردن به سبد خرید"
 
-#: .\templates\products\product_detail.html:76
+#: .\templates\products\product_detail.html:67
 msgid "product description"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:171
+#: .\templates\products\product_detail.html:162
 msgid "write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\templates\products\product_detail.html:177
+#: .\templates\products\product_detail.html:168
 msgid "send"
 msgstr "ارسال"
 
-#: .\templates\products\product_detail.html:180
+#: .\templates\products\product_detail.html:171
 msgid "To write your comment please"
 msgstr "برای نوشتن نظر خود لطفا وارد "
 
-#: .\templates\products\product_detail.html:181
+#: .\templates\products\product_detail.html:172
 msgid "Login"
 msgstr "حساب کاربری خود شوید"
-
-#: .\templates\products\product_detail.html:246
-msgid "Cart"
-msgstr "سبد خرید"
-
-#: .\templates\products\product_detail.html:264
-#: .\templates\products\product_detail.html:272
-msgid "$"
-msgstr "تومان"
-
-#: .\templates\products\product_detail.html:271
-msgid "Total price"
-msgstr "جمع کل"
-
-#: .\templates\products\product_detail.html:276
-#| msgid "add to cart"
-msgid "Go to cart"
-msgstr "رفتن به سبد خرید"
-
-#: .\templates\products\product_detail.html:277
-msgid "Check out"
-msgstr "پرداخت"
 
 #: .\views.py:36
 msgid "Your comment has been added successfully."
 msgstr "نظر شما با موفقیت ثبت شد."
+
+#~ msgid "Cart"
+#~ msgstr "سبد خرید"
+
+#~ msgid "$"
+#~ msgstr "تومان"
+
+#~ msgid "Total price"
+#~ msgstr "جمع کل"
+
+#~ msgid "Go to cart"
+#~ msgstr "رفتن به سبد خرید"
+
+#~ msgid "Check out"
+#~ msgstr "پرداخت"
