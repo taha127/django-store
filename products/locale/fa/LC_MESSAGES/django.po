@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 02:00+0330\n"
-"PO-Revision-Date: 2025-05-23 02:00+0330\n"
+"POT-Creation-Date: 2025-05-23 02:22+0330\n"
+"PO-Revision-Date: 2025-05-23 02:22+0330\n"
 "Last-Translator:   <tahadehghani127@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -28,27 +28,31 @@ msgid "Description"
 msgstr "توضیحات محصول"
 
 #: .\models.py:12
-#| msgid "Total price"
+#| msgid "Description"
+msgid "Short Description"
+msgstr "توضیحات کوتاه"
+
+#: .\models.py:13
 msgid "price"
 msgstr "قیمت"
 
-#: .\models.py:13
+#: .\models.py:14
 msgid "active"
 msgstr "فعال"
 
-#: .\models.py:14
+#: .\models.py:15
 msgid "Image"
 msgstr "تصویر"
 
-#: .\models.py:15
+#: .\models.py:16
 msgid "Date Time Created"
 msgstr "تاریخ ایجاد"
 
-#: .\models.py:40
+#: .\models.py:41
 msgid "Comment Text"
 msgstr "متن دیدگاه"
 
-#: .\models.py:41
+#: .\models.py:42
 msgid "What is your score?"
 msgstr "چه امتیازی به این محصول می دهید؟"
 
