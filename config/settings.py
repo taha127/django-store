@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'rosetta',
-    'jalali_data',
+    'jalali_date',
     # My apps
     'accounts',
     'pages',
