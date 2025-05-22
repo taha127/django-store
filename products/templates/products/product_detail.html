@@ -3,6 +3,7 @@
 {% load crispy_forms_tags %}
 {% load comment_tags %}
 {% load i18n %}
+{% load jalali_tags %}
 {% block body %}
     <!-- Main Wrapper Start -->
     <div class="wrapper">
@@ -131,7 +132,7 @@
                                                                     <div>
                                                                         <div class="review__meta" dir="ltr">
                                                                             <span class="review__published-date">
-                                                                            {{ comment.datetime_created }}
+                                                                            {{ comment.datetime_created|to_jalali:'%Y/%m/%d' }}
                                                                         </span>
                                                                             <span class="review__dash">-</span>
                                                                             <strong class="review__author px-4">
