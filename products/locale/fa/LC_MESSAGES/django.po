@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-22 17:14+0330\n"
-"PO-Revision-Date: 2025-05-22 17:14+0330\n"
+"POT-Creation-Date: 2025-05-22 18:15+0330\n"
+"PO-Revision-Date: 2025-05-22 18:16+0330\n"
 "Last-Translator:   <tahadehghani127@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -35,35 +35,44 @@ msgstr "متن دیدگاه"
 msgid "What is your score?"
 msgstr "چه امتیازی به این محصول می دهید؟"
 
-#: .\templates\products\product_detail.html:10
+#: .\templates\products\product_detail.html:11
 msgid "Product details of"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:48
+#: .\templates\products\product_detail.html:35
+msgid "$"
+msgstr "تومان"
+
+#: .\templates\products\product_detail.html:49
 msgid "add to cart"
 msgstr "اضافه کردن به سبد خرید"
 
-#: .\templates\products\product_detail.html:70
+#: .\templates\products\product_detail.html:71
 msgid "product description"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:122
+#: .\templates\products\product_detail.html:80
+#| msgid "Comment Text"
+msgid "Comments"
+msgstr "نظرات"
+
+#: .\templates\products\product_detail.html:123
 msgid "comments for"
 msgstr "نظر برای"
 
-#: .\templates\products\product_detail.html:165
+#: .\templates\products\product_detail.html:166
 msgid "write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\templates\products\product_detail.html:171
+#: .\templates\products\product_detail.html:172
 msgid "send"
 msgstr "ارسال"
 
-#: .\templates\products\product_detail.html:174
+#: .\templates\products\product_detail.html:175
 msgid "To write your comment please"
 msgstr "برای نوشتن نظر خود لطفا وارد "
 
-#: .\templates\products\product_detail.html:175
+#: .\templates\products\product_detail.html:176
 msgid "Login"
 msgstr "حساب کاربری خود شوید"
 
@@ -73,9 +82,6 @@ msgstr "نظر شما با موفقیت ثبت شد."
 
 #~ msgid "Cart"
 #~ msgstr "سبد خرید"
-
-#~ msgid "$"
-#~ msgstr "تومان"
 
 #~ msgid "Total price"
 #~ msgstr "جمع کل"
