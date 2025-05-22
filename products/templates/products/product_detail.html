@@ -118,7 +118,7 @@
                                          aria-labelledby="nav-reviews-tab">
                                         <div class="product-reviews">
                                             <h3 class="review__title">{{ product.comments.all|only_active_comments|length }}
-                                                نظر برای {{ product.title }}</h3>
+                                                {% trans 'comments for' %} {{ product.title }}</h3>
                                             <ul class="review__list">
                                                 {% for comment in product.comments.all|only_active_comments %}
                                                     <li class="review__item">
@@ -129,7 +129,7 @@
                                                                          alt="Review Avatar"
                                                                          class="review__avatar p-3">
                                                                     <div>
-                                                                        <div class="review__meta">
+                                                                        <div class="review__meta" dir="ltr">
                                                                             <span class="review__published-date">
                                                                             {{ comment.datetime_created }}
                                                                         </span>
