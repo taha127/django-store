@@ -2,14 +2,15 @@ from django.db import models
 from django.urls import reverse
 from django.contrib.auth import get_user_model
 from django.utils import timezone
+from ckeditor.fields import RichTextField
 from django.utils.translation import gettext_lazy as _
 
 
 class Product(models.Model):
-    title = models.CharField(max_length=100)
-    description = models.TextField()
-    price = models.PositiveIntegerField(default=0)
-    active = models.BooleanField(default=True)
+    title = models.CharField(max_length=100, verbose_name=_("title"))
+    description = RichTextField(verbose_name=_("Description"))
+    price = models.PositiveIntegerField(default=0, verbose_name=_("price"))
+    active = models.BooleanField(default=True, verbose_name=_("active"))
     image = models.ImageField(upload_to="products/product_image/", verbose_name=_("Image"), blank=True)
     datetime_created = models.DateTimeField(default=timezone.now, verbose_name=_("Date Time Created"))
     datetime_modified = models.DateTimeField(auto_now=True)
