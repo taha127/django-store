@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-22 15:42+0330\n"
-"PO-Revision-Date: 2025-05-22 15:43+0330\n"
+"POT-Creation-Date: 2025-05-22 17:14+0330\n"
+"PO-Revision-Date: 2025-05-22 17:14+0330\n"
 "Last-Translator:   <tahadehghani127@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -19,47 +19,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.2\n"
 
-#: .\models.py:12
+#: .\models.py:13
 msgid "Image"
 msgstr "تصویر"
 
-#: .\models.py:38
+#: .\models.py:14
+msgid "Date Time Created"
+msgstr "تاریخ ایجاد"
+
+#: .\models.py:39
 msgid "Comment Text"
 msgstr "متن دیدگاه"
 
-#: .\models.py:39
+#: .\models.py:40
 msgid "What is your score?"
 msgstr "چه امتیازی به این محصول می دهید؟"
 
-#: .\templates\products\product_detail.html:9
+#: .\templates\products\product_detail.html:10
 msgid "Product details of"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:47
+#: .\templates\products\product_detail.html:48
 msgid "add to cart"
 msgstr "اضافه کردن به سبد خرید"
 
-#: .\templates\products\product_detail.html:69
+#: .\templates\products\product_detail.html:70
 msgid "product description"
 msgstr "توضیحات محصول"
 
-#: .\templates\products\product_detail.html:121
+#: .\templates\products\product_detail.html:122
 msgid "comments for"
 msgstr "نظر برای"
 
-#: .\templates\products\product_detail.html:164
+#: .\templates\products\product_detail.html:165
 msgid "write your comment"
 msgstr "نظر خود را بنویسید"
 
-#: .\templates\products\product_detail.html:170
+#: .\templates\products\product_detail.html:171
 msgid "send"
 msgstr "ارسال"
 
-#: .\templates\products\product_detail.html:173
+#: .\templates\products\product_detail.html:174
 msgid "To write your comment please"
 msgstr "برای نوشتن نظر خود لطفا وارد "
 
-#: .\templates\products\product_detail.html:174
+#: .\templates\products\product_detail.html:175
 msgid "Login"
 msgstr "حساب کاربری خود شوید"
 
