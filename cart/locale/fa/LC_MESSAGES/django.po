@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-16 17:25+0330\n"
-"PO-Revision-Date: 2025-05-16 17:26+0330\n"
+"POT-Creation-Date: 2025-05-22 23:40+0330\n"
+"PO-Revision-Date: 2025-05-22 23:41+0330\n"
 "Last-Translator:   <tahadehghani127@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -24,21 +24,52 @@ msgstr ""
 msgid "Product %s added to cart."
 msgstr "محصول \"%s\" به سبد خرید اضافه شد."
 
-#: .\templates\cart\cart_detail.html:7 .\templates\cart\cart_sidebar.html:8
+#: .\templates\cart\cart_detail.html:9 .\templates\cart\cart_sidebar.html:8
 msgid "Cart"
 msgstr "سبد خرید"
 
-#: .\templates\cart\cart_detail.html:75
+#: .\templates\cart\cart_detail.html:26
+msgid "product image"
+msgstr "عکس محصول"
+
+#: .\templates\cart\cart_detail.html:27
+msgid "product name"
+msgstr "نام محصول"
+
+#: .\templates\cart\cart_detail.html:28
+#| msgid "Total price"
+msgid "price"
+msgstr "قیمت"
+
+#: .\templates\cart\cart_detail.html:29
+msgid "quantity"
+msgstr "مقدار"
+
+#: .\templates\cart\cart_detail.html:30 .\templates\cart\cart_detail.html:94
+#| msgid "Total price"
+msgid "total price"
+msgstr "جمع کل"
+
+#: .\templates\cart\cart_detail.html:79
 msgid "Cart is Empty. Please add some products to the cart."
 msgstr "سبد خرید شما خالی است. محصولات مد نظر خود را به سبد خرید اضافه کنید."
 
-#: .\templates\cart\cart_detail.html:76
+#: .\templates\cart\cart_detail.html:80
 msgid "Go shoping"
 msgstr "اضافه کردن محصولات"
 
-#: .\templates\cart\cart_sidebar.html:26 .\templates\cart\cart_sidebar.html:34
+#: .\templates\cart\cart_detail.html:86
+msgid "Empty shopping cart"
+msgstr "خالی کردن سبد خرید"
+
+#: .\templates\cart\cart_detail.html:98 .\templates\cart\cart_sidebar.html:26
+#: .\templates\cart\cart_sidebar.html:34
 msgid "$"
 msgstr "تومان"
+
+#: .\templates\cart\cart_detail.html:104
+msgid "Confirm Order"
+msgstr "ثبت سفارش"
 
 #: .\templates\cart\cart_sidebar.html:33
 msgid "Total price"
