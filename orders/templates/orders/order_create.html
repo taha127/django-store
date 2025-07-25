@@ -1,6 +1,8 @@
 {% extends '_base.html' %}
 {% load crispy_forms_tags %}
 {% load i18n %}
+{% load persian_translation_tags %}
+{% load humanize %}
 {% block body %}
     <!-- Main Content Wrapper Start -->
     <div class="main-content-wrapper">
@@ -79,23 +81,20 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <th>محصول شماره یک
-                                            <strong><span>&#10005;</span>۲</strong>
-                                        </th>
-                                        <td class="text-right">۲۹۶,۰۰۰ تومان</td>
-                                    </tr>
-                                    <tr>
-                                        <th>محصول شماره دو
-                                            <strong><span>&#10005;</span>۱</strong>
-                                        </th>
-                                        <td class="text-right">۵۸,۰۰۰ تومان</td>
-                                    </tr>
+                                    {% for item in cart %}
+                                        <tr>
+                                            <th>{{ item.product_obj.title }}
+                                                <strong><span>&#10005;</span> {{ item.quantity | translate_number }}
+                                                </strong>
+                                            </th>
+                                            <td class="text-right">{{ item.product_obj.price | intcomma:False | translate_number }} {% trans '$' %}</td>
+                                        </tr>
+                                    {% endfor %}
                                     </tbody>
                                     <tfoot>
                                     <tr class="cart-subtotal">
                                         <th>مجموع</th>
-                                        <td class="text-right">۳۴۸,۰۰۰ تومان</td>
+                                        <td class="text-right">{{ cart.get_total_price | intcomma:False | translate_number }} {% trans '$' %}</td>
                                     </tr>
                                     </tfoot>
                                 </table>
