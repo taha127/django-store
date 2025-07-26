@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-25 20:57+0330\n"
-"PO-Revision-Date: 2025-07-25 20:58+0330\n"
-"Last-Translator:   <tahadehghani127@gmail.com>\n"
+"POT-Creation-Date: 2025-07-26 12:15+0330\n"
+"PO-Revision-Date: 2025-07-26 12:18+0330\n"
+"Last-Translator: محمد طه دهقانی <tahadehghani127@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -67,3 +67,15 @@ msgstr "ارسال"
 #: .\templates\orders\order_create.html:96
 msgid "$"
 msgstr "تومان"
+
+#: .\views.py:15
+msgid ""
+"Your cart is empty. Please add products to your cart before placing an "
+"order."
+msgstr ""
+"سبد خرید شما خالی است! لطفا قبل از ثبت سفارشات محصولات خود را به سبد خرید "
+"اضافه کنید."
+
+#: .\views.py:35
+msgid "Your order has been placed successfully!"
+msgstr "سفارشات شما با موفقیت ثبت شد."
