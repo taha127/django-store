@@ -81,12 +81,16 @@
                                 {% endif %}
                             </div>
                         </div>
+                        {% if cart|length %}
                         <div class="row no-gutters border-top pt--20 mt--20">
                             <div class="col-sm-6 text-sm-right">
-                                <button type="submit" class="cart-form__btn">{% trans 'Empty shopping cart' %}</button>
+                                <form action="{% url 'cart:clear_cart' %}" method="post">
+                                    {% csrf_token %}
+                                    <button type="submit" class="cart-form__btn">{% trans 'Empty shopping cart' %}</button>
+                                </form>
                             </div>
                         </div>
-                        </form>
+                        {% endif %}
                     </div>
                     <div class="col-lg-4">
                         <div class="cart-collaterals">
