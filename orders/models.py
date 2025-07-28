@@ -11,6 +11,7 @@ class Order(models.Model):
     address = models.CharField(_('Address'), max_length=700)
     is_paid = models.BooleanField(_('Is Paid?'), default=False)
     order_notes = models.CharField(_('Order Notes'), max_length=700, blank=True)
+    zarinpal_authority = models.CharField(_('Authority'), max_length=255, blank=True)
     datetime_created = models.DateTimeField(_('DateTime Created'), auto_now_add=True)
     datetime_modified = models.DateTimeField(_('DateTime Modified'), auto_now=True)
 
