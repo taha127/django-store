@@ -212,3 +212,4 @@ from django.contrib.messages import constants
 MESSAGE_TAGS = {
     constants.ERROR: 'danger',
 }
+ZARINPAL_MERCHANT_ID = env("DJANGO_ZARINPAL_MERCHANT_ID")

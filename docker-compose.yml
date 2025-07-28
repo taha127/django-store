@@ -15,7 +15,9 @@ services:
       - "8000:8000"
 
     environment:
+      - "DJANGO_SECRET_KEY=${DJANGO_SECRET_KEY}"
       - "DJANGO_DEBUG=True"
+      - "DJANGO_ZARINPAL_MERCHANT_ID=${DOCKER_COMPOSE_ZARINPAL_MERCHANT_ID}"
 
   db:
     image: postgres:17.0
