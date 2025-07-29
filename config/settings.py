@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 import os.path
 from pathlib import Path
 from environs import Env
+import socket
 
 # Load environment variables from .env file
 env = Env()
@@ -49,6 +50,7 @@ INSTALLED_APPS = [
     'rosetta',
     'jalali_date',
     'ckeditor',
+    "debug_toolbar",
     # My apps
     'accounts',
     'pages',
@@ -62,6 +64,7 @@ INSTALLED_APPS = [
 SITE_ID = 1
 
 MIDDLEWARE = [
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -72,6 +75,9 @@ MIDDLEWARE = [
     # Add the account middleware:
     "allauth.account.middleware.AccountMiddleware",
 ]
+
+hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+INTERNAL_IPS = ["127.0.0.1"] + [ip[: ip.rfind(".")] + ".1" for ip in ips]
 
 ROOT_URLCONF = "config.urls"
 
